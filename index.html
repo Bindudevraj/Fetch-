@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: rgb(195, 195, 195);
+        }
+
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #272727;
+        }
+
+        #posts {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+            text-align: center;
+            width: 80vw;
+            margin: 20px auto;
+        }
+
+        .post {
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .post img {
+            width: 100%;
+        }
+
+        .post h4 {
+            margin: 10px;
+        }
+
+        .post p {
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Posts</h1>
+    <section id="posts"></section>
+
+    <template id="post-template">
+        <div class="post">
+            <img src="" alt="" class="post__img">
+            <h4 class="post__title"></h4>
+            <p class="post__body"></p>
+        </div>
+    </template>
+    <script src="index.js"></script>
+</body>
+
+</html>
